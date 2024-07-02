@@ -1,0 +1,104 @@
+
+body {
+    background-color: #F0F0F0;
+}
+
+h1 {
+    color: black;
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+.main {
+    display: grid;
+    grid: 5cm 1fr / 5cm 1fr;
+    width: 100%;
+    font-size: 1vw;
+    margin-top: 10px;
+}
+
+.box {
+    margin: 0px;
+    padding: 0 20px;
+}
+
+.resume-head {
+    grid-area: 1/1/2/-1;
+    display: flex;
+}
+
+.resume-body{
+    grid-area: 2/1/-1/-1;
+}
+
+#photo {
+    flex-basis: 5cm;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#photo_1{
+    width: 4.6cm;
+    height: 4.6cm;
+    border-radius: 2.3cm;
+    background-color: grey;
+    object-fit: cover;
+}
+
+.summary-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 75%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 0 20px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#summary {
+    font-size: 1.7em;
+}
+
+.Personal {
+    font-size: 1.7em;
+}
+
+.Education {
+    font-size: 1.7em;
+}
+
+.Work {
+    font-size: 1.7em;
+}
+
+.Certification {
+    font-size: 1.7em;
+}
+
+.Other {
+    font-size: 1.7em;
+}
+
+.Skill {
+    font-size: 1.7em;
+}
+
+.footer {
+    font-size: 1em;
+}
+
+.nav-right {
+    float: right
+}
