@@ -1,5 +1,27 @@
 body {
-    background-color: #F0F0F0;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+#home-body {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: white;
+}
+
+#aboutme-body {
+    background-color: white;
+}
+
+#history-body {
+    background-color: white;
+}
+
+.image-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 h1 {
@@ -15,34 +37,22 @@ ul {
     display: none;
 }
 
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-    color: rgb(var(--bs-tertiary-color-rgb));
+.nav-item .active {
+    font-weight: bold;
 }
-
 
 /* CUSTOMIZE THE CAROUSEL
  -------------------------------------------------- */
 
-/* Carousel base class */
-.carousel {
-    margin-bottom: 4rem;
-}
-
 /* Since positioning the image, we need to help out the caption */
-.carousel-caption {
+#home-body .carousel-caption {
     bottom: 3rem;
     z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
-.carousel-item {
-    height: 32rem;
+#home-body .carousel-item {
+    height: 100vh;
 }
 
 

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/style.css" />
 </head>
 
-<body>
+<body id="home-body">
   <header>
     <nav class="navbar navbar-expand-sm fixed-top bg-white">
       <div class="container-fluid">
@@ -25,22 +25,11 @@
               <a id="home" class="nav-link active main-menu" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a id="aboutme" class="nav-link main-menu" href="./public/about-me.html">About me</a>
+              <a id="aboutme" class="nav-link main-menu" href="/public/aboutme.html">About me</a>
             </li>
             <li class="nav-item">
-              <a id="history" class="nav-link main-menu" href="./public/history.html">History</a>
+              <a id="history" class="nav-link main-menu" href="/public/history.html">History</a>
             </li>
-            <!--li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li-->
-            <!--li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li-->
           </ul>
         </div>
       </div>
@@ -49,52 +38,29 @@
 
   <div>
     <div id="home-page" class="main-page">
-      <div id="myCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div id="myCarousel" class="carousel slide mb-0" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
-            aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-            class=""></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active"
-            aria-current="true"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class=""></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-            </svg>
+          <div class="carousel-item active">
+            <img class="image-cover" src="/assets/images/barbatos.jpg" alt="carita dari imagenya">
             <div class="container">
               <div class="carousel-caption text-start">
-                <h1>Example headline</h1>
-                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="./public/about-me.html">About Me</a></p>
+                <h1>About me</h1>
+                <p>Born & rise, educations, occupation, likes & dislikes, and more</p>
+                <p><a class="btn btn-lg btn-primary" href="/public/aboutme.html">Find out here</a></p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-            </svg>
+            <img class="image-cover" src="/assets/images/adventure.jpg" alt="carita dari imagenya">
             <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="./public/history.html">History</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              <div class="carousel-caption text-start">
+                <h1>History</h1>
+                <p>Just a bite of my whole story</p>
+                <p><a class="btn btn-lg btn-primary" href="/public/history.html">Take a look</a></p>
               </div>
             </div>
           </div>
