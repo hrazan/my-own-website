@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--ref: https://getbootstrap.com/docs/5.3/examples/cheatsheet/-->
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Razan's Web</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/public/aboutme.css" />
 </head>
 
-<body id="aboutme-body">
-  <header>
+<body>
+  <header class="bd-header d-flex align-items-stretch">
     <nav class="navbar navbar-expand-sm fixed-top bg-white">
       <div class="container-fluid">
         <a class="navbar-brand h1">Hafiyanda Razan Natawidjaja</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -35,45 +37,221 @@
       </div>
     </nav>
   </header>
+  <aside class="bd-aside sticky-xl-top text-body-secondary align-self-start pt-5 mb-3 mb-xl-5 px-2">
+    <h2 class="h6 pt-4 pb-3 mb-2 border-bottom">Contents</h2>
+    <nav class="small" id="toc">
+      <ul class="list-unstyled">
+        <li class="my-2">
+          <ul class="list-unstyled ps-0">
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#aboutme-name">Name</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                href="#aboutme-bornandraise">Born & Raise</a></li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                href="#aboutme-educations">Educations</a></li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                href="#aboutme-occupation">Occupation</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                href="#aboutme-likesanddislikes">Likes & Dislikes</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                href="#aboutme-hobbies">Hobbies</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <div id="aboutme-page" class="main-page bd-cheatsheet container-fluid bg-body pt-5">
+    <section id="content">
+      <article class="my-3" id="aboutme-name">
+        <div class="bd-heading sticky-xl-top align-self-start mt-3 mb-3 mt-xl-0 mb-xl-2">
+          <h3>Name</h3>
+        </div>
 
-  <div id="aboutme-page" class="main-page">
-    <div class="container marketing">
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-          </svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the
-            first column.</p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-          </svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second
-            column.</p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-          </svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>And lastly this, the third column of representative placeholder content.</p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-    </div>
+        <div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <p class="display-3">Hafiyanda Razan Natawidjaja</p>
+              <p class="lead">These are three words that will be my full name, which my father wanted to be when I was
+                born to this wolrd.</p>
+              <p class="display-3">Hafiyanda Razan</p>
+              <p class="lead">These words are my certified full name. My parents said that "hafiyan" means "good person"
+                in arabic
+                and they just added "da" to make it sounds better. The other one, "razan", would means "some one who has
+                a sense of responsibility."</p>
+              <p class="display-3">Natawidjaja</p>
+              <p class="lead">This is my father's family name that he wanted me to have it. Unfortunately,
+                because of some rules in Indonesia at that time. They did not allow him to make it in my name
+                without some conditions, which my father and mother didi not want to take it.</p>
+              <p class="display-3">Fiyan</p>
+              <p class="lead">This one will be my nickname in my family and my elementary school's friends.</p>
+              <p class="display-3">Razan</p>
+              <p class="lead">This is my nickname since junior high school until now. The reason for this are the
+                meaning. "fiyan" does not really have a meaning,
+                which in the other side "razan" has meaning that I hope I'll be a better version of me.
+                So, yes, please call me razan instead if you don't mind. (^^)</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="my-3" id="aboutme-bornandraise">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+          <h3>Born & Raise</h3>
+        </div>
+
+        <div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0 image-container">
+              <a href="https://maps.app.goo.gl/1AoRmRAYZiNZBQNa9">
+                <img class="image-cover" src="/assets/images/jakarta.jpg" alt="cerita dari imagenya">
+                <p class="display-4 top-left bold-font">Jakarta, Indonesia</p>
+                <p class="bottom-left leftalign-text">Honestly this is a place that has so many problems in it.
+                  But I have a lot of memories here with my dearest people. Wish you all the best Jakarta...
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="my-3" id="aboutme-educations">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+          <h3>Educations</h3>
+          <a class="d-flex align-items-center" href="/docs/5.3/content/tables/">Documentation</a>
+        </div>
+
+        <div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Institution</th>
+                    <th scope="col">Details</th>
+                    <th scope="col">Start</th>
+                    <th scope="col">Finish</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <a href="https://www.google.com">TK Aisyiah 21, Jakarta</a>
+                    </th>
+                    <td>-</td>
+                    <td>1997</td>
+                    <td>1999</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <a href="https://www.google.com">SD Muhammadiyah 24, Jakarta</a>
+                    </th>
+                    <td>-</td>
+                    <td>1999</td>
+                    <td>2005</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <a href="https://www.google.com">SMP Negeri 109, Jakarta</a>
+                    </th>
+                    <td>-</td>
+                    <td>2005</td>
+                    <td>2008</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <a href="https://www.google.com">SMA Negeri 21, Jakarta</a>
+                    </th>
+                    <td>Science course from 2nd year</td>
+                    <td>2008</td>
+                    <td>2011</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <a href="https://www.google.com">Bandung Institute of Technology</a>
+                    </th>
+                    <td>School of Electrical Engineering and Informatics</td>
+                    <td>2011</td>
+                    <td>2015</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <a href="https://www.google.com">Ehle Institute</a>
+                    </th>
+                    <td>-</td>
+                    <td>2015</td>
+                    <td>2017</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <a href="https://www.google.com">Nagoya Institute of Technlogy</a>
+                    </th>
+                    <td>Reserch Student</td>
+                    <td>2017</td>
+                    <td>2019</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <a href="https://www.google.com">Nagoya Institute of Technlogy</a>
+                    </th>
+                    <td>Graduate School of Computer Science</td>
+                    <td>2019</td>
+                    <td>2021</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="my-3" id="aboutme-occupation">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+          <h3>Occupation</h3>
+          <a class="d-flex align-items-center" href="/docs/5.3/content/figures/">Documentation</a>
+        </div>
+
+        <div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+
+              <figure class="figure">
+                <svg class="bd-placeholder-img figure-img img-fluid rounded" width="400" height="300"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 400x300"
+                  preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                    dy=".3em">400x300</text>
+                </svg>
+                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="my-3" id="aboutme-likesanddislikes">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+          <h3>Likes & Dislikes</h3>
+          <a class="d-flex align-items-center" href="/docs/5.3/content/figures/">Documentation</a>
+        </div>
+
+        <div>
+        </div>
+      </article>
+
+      <article class="my-3" id="aboutme-hobbies">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+          <h3>Hobbies</h3>
+          <a class="d-flex align-items-center" href="/docs/5.3/content/figures/">Documentation</a>
+        </div>
+
+        <div>
+        </div>
+      </article>
+    </section>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

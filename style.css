@@ -2,6 +2,7 @@ body {
     padding-top: 5rem;
     padding-bottom: 3rem;
     color: rgb(var(--bs-tertiary-color-rgb));
+    scroll-behavior: smooth;
 }
 
 #home-body {
@@ -11,6 +12,8 @@ body {
 }
 
 #aboutme-body {
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: white;
 }
 
