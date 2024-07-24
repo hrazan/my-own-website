@@ -1,0 +1,97 @@
+body {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white;
+  color: rgb(var(--bs-tertiary-color-rgb));
+  scroll-behavior: smooth;
+}
+
+.image-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  color: white;
+}
+
+ul {
+  list-style-type: circle;
+  list-style-position: outside;
+}
+
+.display-off {
+  display: none;
+}
+
+.nav-item .active {
+  font-weight: bold;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image-container a {
+  color: white;
+}
+
+.bold-font {
+  font-weight: 1000;
+}
+
+.leftalign-text {
+  background: rgba(100, 100, 100, .5);
+  text-align: left;
+}
+
+.link {
+  font-style: normal;
+  text-decoration: none;
+  color: #40534C;
+}
+
+.text-on-image {
+  background-color: lightslategray;
+  opacity: 50%;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  right: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

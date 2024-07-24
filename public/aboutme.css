@@ -44,7 +44,19 @@ ul {
 }
 
 .leftalign-text {
+  background: rgba(100, 100, 100, .5);
   text-align: left;
+}
+
+.link {
+  font-style: normal;
+  text-decoration: none;
+  color: #40534C;
+}
+
+.text-on-image {
+  background-color: lightslategray;
+  opacity: 50%;
 }
 
 /* Bottom left text */
@@ -52,6 +64,7 @@ ul {
   position: absolute;
   bottom: 8px;
   left: 16px;
+  right: 16px;
 }
 
 /* Top left text */
