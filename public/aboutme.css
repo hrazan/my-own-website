@@ -40,12 +40,27 @@ ul {
 }
 
 .bold-font {
-  font-weight: 1000;
+  font-weight: bold;
 }
 
 .leftalign-text {
-  background: rgba(100, 100, 100, .5);
   text-align: left;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.text-background {
+  background: rgba(100, 100, 100, .5);
+}
+
+.likes {
+  background: rgba(200, 200, 200, .2);
+}
+
+.dislikes {
+  background: rgba(150, 150, 150, .2);
 }
 
 .link {
@@ -94,6 +109,23 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#aboutme-hobbies .container {
+  background-color: white;
+}
+
+#aboutme-hobbies .album {
+  background-color: white;
+}
+
+.image-buble-container {
+  height: 13vw;
+  width: 13vw;
+}
+
+.image-buble {
+  border-radius: 50%;
 }
 
 /**
