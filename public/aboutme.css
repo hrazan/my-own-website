@@ -111,6 +111,10 @@ ul {
   transform: translate(-50%, -50%);
 }
 
+.white-text {
+  color: #FFFFFF;
+}
+
 #aboutme-hobbies .container {
   background-color: white;
 }
@@ -119,9 +123,21 @@ ul {
   background-color: white;
 }
 
+
+.buble-container {
+  position: relative;
+  width: 50%;
+  height: 70vh;
+}
+
 .image-buble-container {
-  height: 13vw;
-  width: 13vw;
+  position: absolute;
+  height: 10vw;
+  max-height: 15vh;
+  width: 10vw;
+  max-width: 15vh;
+  left: 0pt;
+  top: 0pt;
 }
 
 .image-buble {
