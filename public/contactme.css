@@ -68,6 +68,10 @@ ul {
   color: #40534C;
 }
 
+.link:hover {
+  color: #0B5ED7;
+}
+
 .text-on-image {
   background-color: lightslategray;
   opacity: 50%;
